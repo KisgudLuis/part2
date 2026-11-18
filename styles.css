@@ -1,0 +1,197 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #dceeff, #f4f7fc);
+    color: #263445;
+}
+
+/* ENCABEZADO */
+
+header {
+    background: linear-gradient(135deg, #102d50, #1769aa);
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+    border-bottom: 4px solid #39a9e8;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #d5eaff;
+}
+
+/* CONTENEDOR */
+
+main {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 5px solid #1684c7;
+    box-shadow: 0 5px 18px rgba(16, 45, 80, 0.12);
+}
+
+h2 {
+    color: #123b65;
+    margin-top: 0;
+}
+
+/* NOTA INFORMATIVA */
+
+.nota {
+    font-size: 14px;
+    color: #31516e;
+    background-color: #e9f4ff;
+    border-left: 4px solid #1684c7;
+    padding: 12px;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+/* FORMULARIO */
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #244565;
+}
+
+input, select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #bdcddd;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fbfdff;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #1684c7;
+    box-shadow: 0 0 0 3px rgba(22, 132, 199, 0.13);
+}
+
+small {
+    display: block;
+    color: #718096;
+    margin-top: 5px;
+}
+
+/* BOTON AGREGAR */
+
+button {
+    margin-top: 18px;
+    background-color: #1769aa;
+    color: white;
+    border: none;
+    padding: 11px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #104c80;
+}
+
+/* BOTON ELIMINAR */
+
+.btn-eliminar {
+    background-color: #dc3545;
+    margin-top: 0;
+    padding: 7px 11px;
+    font-size: 13px;
+}
+
+.btn-eliminar:hover {
+    background-color: #a71d2a;
+}
+
+/* MENSAJES */
+
+#mensaje-mantenimiento {
+    color: #1769aa;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* TABLA */
+
+.contenedor-tabla {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dce5ee;
+    padding: 11px;
+    text-align: left;
+}
+
+th {
+    background-color: #123b65;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f6fc;
+}
+
+tbody tr:hover {
+    background-color: #e1f0ff;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #102d50;
+    color: white;
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+/* DISEÑO PARA CELULARES */
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    .tarjeta {
+        padding: 17px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}

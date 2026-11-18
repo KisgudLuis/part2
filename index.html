@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMTELE-WEB - Mantenimiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>SIMTELE-WEB</h1>
+        <p>Simulación Didáctica - Mi Teleférico</p>
+    </header>
+
+    <main>
+        <section class="tarjeta" id="mantenimiento">
+
+            <h2>Control de Mantenimiento</h2>
+
+            <p class="nota">
+                <strong>Simulación educativa:</strong>
+                Permite registrar componentes hipotéticos,
+                sus horas de uso y estados de mantenimiento.
+                Los datos no representan condiciones operativas reales.
+            </p>
+
+            <form id="form-mantenimiento">
+
+                <label for="componente">Nombre del componente:</label>
+                <input type="text" id="componente"
+                    placeholder="Ej: Polea Motriz" required>
+                <small>Ingrese el nombre del componente.</small>
+
+                <label for="horas">Horas de uso:</label>
+                <input type="number" id="horas"
+                    placeholder="Ej: 120" min="0" step="any" required>
+                <small>Ingrese un número igual o mayor a cero.</small>
+
+                <label for="estado">Estado del componente:</label>
+                <select id="estado">
+                    <option value="Normal">Normal</option>
+                    <option value="Revisión">Revisión</option>
+                    <option value="Urgente">Urgente</option>
+                </select>
+                <small>Seleccione el estado simulado.</small>
+
+                <button type="submit">+ Agregar Registro</button>
+
+            </form>
+
+            <p id="mensaje-mantenimiento" aria-live="polite"></p>
+
+            <div class="contenedor-tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Componente</th>
+                            <th>Horas de Uso</th>
+                            <th>Estado</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-mantenimiento"></tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto Académico - Programación Web I</p>
+        <p>SIMTELE-WEB | Control de Mantenimiento</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
